@@ -5,7 +5,8 @@ import streamlit as st
 
 
 st.set_page_config(
-    page_title='Consoleflare Analytics Prortal'
+    page_title='AnalytiX',
+    page_icon = 'logo.png'
 )
 
 
@@ -84,7 +85,7 @@ if(file!= None):
             result = data.groupby(group_by).agg(newcol=(operation_col,operation)).round().sort_values(by='newcol',ascending=False).reset_index()
             st.dataframe(result)
             st.subheader(':grey[Visualization]',divider='grey')
-            graph = st.selectbox('Choose your chart',options=['line','bar','scatter','line','sunburst'])
+            graph = st.selectbox('Choose your chart',options=['line','bar','scatter','line','pie','sunburst'])
             if(graph=='line'):
                 x_axis = st.selectbox('Choose X-axis',options=list(result.columns))
                 y_axis = st.selectbox('Choose Y-axis',options=list(result.columns))
@@ -104,6 +105,15 @@ if(file!= None):
                 color = st.selectbox('Color Information',options=[None]+list(result.columns))
                 size = st.selectbox('Size',options=[None]+list(result.columns))
                 fig = px.bar(data_frame=result,x=x_axis,y=y_axis,color=color,)
+                st.plotly_chart(fig)
+            elif(graph=='pie'):
+                value = st.selectbox('Choose Numeric value',options=list(result.columns))
+                names = st.selectbox('Choose Lable',options=list(result.columns))
+                fig = px.pie(data_frame=result,values=value,names=names)
+                st.plotly_chart(fig)
+            elif(graph=='sunburst'):
+                path = st.multiselect('Choose your path',options=list(result.columns))
+                fig = px.sunburst(data_frame=result,path=path,values='newcol')
                 st.plotly_chart(fig)
 
 
