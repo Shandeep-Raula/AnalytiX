@@ -1,4 +1,4 @@
-## AnalytiX: Simplifying Data Exploration and Visualization
+## AnalytiX : Simplifying Data Exploration and Visualization
 #### AnalytiX is an intuitive data analytics platform designed to make data exploration effortless and insightful. Whether you're a data professional or just getting started, AnalytiX allows you to seamlessly upload and analyze datasets, generate detailed summaries, and create interactive visualizations—all within a user-friendly interface.
 
 ## Features
@@ -59,6 +59,8 @@ To run AnalytiX locally, you need to have Python installed. Follow these steps:
 
 ## Sample 
 
-![AnalytiX](images/logo.png)
+![AnalytiX](https://github.com/Shandeep-Raula/AnalytiX/blob/main/Analytix.png)
+URL : https://analytix-insights.streamlit.app/
+
 
 
