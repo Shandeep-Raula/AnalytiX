@@ -56,3 +56,9 @@ To run AnalytiX locally, you need to have Python installed. Follow these steps:
    ```bash
    streamlit run myapp.py
    ```
+
+## Sample 
+
+![AnalytiX](images/logo.png)
+
+
