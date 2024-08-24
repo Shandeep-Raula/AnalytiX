@@ -2,6 +2,7 @@
 #### AnalytiX is an intuitive data analytics platform designed to make data exploration effortless and insightful. Whether you're a data professional or just getting started, AnalytiX allows you to seamlessly upload and analyze datasets, generate detailed summaries, and create interactive visualizations—all within a user-friendly interface.
 
 ## Features
+
 - Upload and visualize CSV or Excel files.
 - View statistical summaries of datasets.
 - Explore top and bottom rows of the data.
@@ -9,7 +10,8 @@
 - Perform value counts and group-by operations.
 - Generate various charts (bar, line, pie, scatter, sunburst).
 
-### Techstack
+## Techstack
+Python Package required to install on your system:
 - Pandas
   
   ```
