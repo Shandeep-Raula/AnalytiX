@@ -15,21 +15,21 @@ Python Package required to install on your system:
 
 1. Pandas
   
-  ```
-  pip install pandas
-  ```
+    ```bash
+    pip install pandas
+    ```
   
 2. Plotly
     
-  ```
-  pip install plotly
-  ```
+    ```bash
+    pip install plotly
+    ```
   
 3. StreamLit
     
-  ```
-  pip install streamlit
-  ```
+    ```bash
+    pip install streamlit
+    ```
   
 ## Installation
 To run AnalytiX locally, you need to have Python installed. Follow these steps:
