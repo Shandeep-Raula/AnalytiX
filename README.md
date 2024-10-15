@@ -12,19 +12,20 @@
 
 ## Techstack
 Python Package required to install on your system:
-- Pandas
+
+1. Pandas
   
   ```
   pip install pandas
   ```
   
-- Plotly
+2. Plotly
     
   ```
   pip install plotly
   ```
   
-- StreamLit
+3. StreamLit
     
   ```
   pip install streamlit
